@@ -1,0 +1,401 @@
+/* CSS */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  font-family: "Lato", sans-serif;  
+  
+}
+
+:root{
+  --accent-color:@BACKGROUND;
+  --gradient-color:@WHITE;
+}
+
+.header {
+  background-image:url(/img/fondo6.png);
+  background-color: #e2d5bf; 
+  padding: 10px;
+  border-bottom: solid 4px rgb(238, 238, 238);
+  color :red;
+  font-size: large;
+  display: flex;
+  flex-flow:row;
+  }
+
+/* ZONA BODY */
+body {
+  margin: 10;
+  justify-content: center;  
+  align-items: center;
+  background: #cee4f5;
+  background-color: #FAFAD2; 
+  background-image:url(/img/fondo7.png);
+  text-transform:none;
+  line-height: 1.6em; /* interlineado */
+        
+}
+
+.caja1 {
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 2px;
+  border-top: solid 0px;
+}
+
+.contenido {
+  padding: 12px;
+  background-color: rgb(240, 234, 234);
+  font-family: 'Lato', Courier, monospace;
+  word-spacing: 3px;
+  text-shadow: shadow 1px;;
+  border-color: rgb(204, 204, 204);
+  }
+
+.nav1 {
+    padding: 2px;
+    border-bottom: solid 4px #eee;
+    color:dodgerblue;
+    font-size: medium;
+    display: flex;
+    margin-bottom: 160px;
+        
+    }
+li {
+      list-style-type: none;
+      display : inline-block;
+      overflow: hidden;
+      
+  }
+
+/*----------------------------------------------*/
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: absolute;
+    
+}
+
+/*----------------------------------------------*/
+
+.footer {
+  padding: 10px;
+  border-top: solid 2px rgb(235, 237, 238);
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+p {
+	text-align:left;
+}
+.color_verde{
+   color: #31B404;
+   font-style: italic;
+   font-weight: bold;
+}
+.destacado{
+color:#FF4000;
+text-align:right;
+	}
+.tamaño {
+	font-size: large;
+  color:#FF4000;
+	}
+.link_resaltado{
+	color:#F7BE81;
+	font-weight: bold;
+	text-decoration: none
+	}
+	
+.primario {
+  background-color: #0090FF;
+  padding: 5px;
+  border: 0px;
+  color: #fff;
+}
+
+.secundario {
+  background-color: #aaa;
+  padding: 5px;
+  border: 0px;
+  color: #fff;
+}
+
+.zonacontacto {
+  padding: 10px;
+  border-top: solid 3px #eee;
+  background-color: rgb(219, 233, 166);
+}
+
+/*CSS PARA MENUVAR*/
+li a {
+  display:block;
+  min-width:140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #2f3036;
+  background: #52062e;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/*------------------------------------*/
+li:hover a {
+  background: #19c589;
+}
+/*------------------------------------*/
+li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+/*------------------------------------*/
+li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
+}
+/*------------------------------------*/
+li ul {
+  display: none;
+}
+/*------------------------------------*/
+li ul li {
+  display: block;
+  float: none;
+}
+/*------------------------------------*/
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+/*------------------------------------*/
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+/*------------------------------------*/
+.show-menu {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+/*------------------------------------*/
+input[type=checkbox]{
+  display: none;
+}
+/*------------------------------------*/
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+/*------------------------------------*/
+@media screen and (max-width : 760px){
+  ul {
+      position: static;
+      display: none;
+  }
+  li {
+      margin-bottom: 1px;
+  }
+  ul li, li a {
+      width: 100%;
+  }
+  
+  .show-menu {
+      display:block;
+  }
+}
+
+/*---FORMULARIO DE CONTACTO-------------------*/
+
+.box1 {
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  }
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+input[type=submit]{
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/*--------------------------------------------------*/
+#columna{
+	width:300px;
+	height:auto;
+	background-color:#7b9460;
+	float:right;
+	}
+
+  /*--Margenes imagen slide-------------------------*/
+  .carousel {
+    margin-left: 0%;
+    margin-right: 0%;
+    
+  }
+  
+  ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+  }
+  
+  .slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+  
+  ul.slides input {
+    display: none;
+  }
+  
+  .slide-container {
+    display: block;
+  }
+  
+  .slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+  }
+  
+  .carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+  }
+  
+  .slide-image:hover + .carousel-controls label {
+    opacity: 0.5;
+  }
+  
+  .carousel-controls label:hover {
+    opacity: 1;
+  }
+  
+  .carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+  }
+  
+  .carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+  }
+  
+  .carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+  }
+  
+  input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+  }
+  
+  input:checked + .slide-container .carousel-controls label {
+    display: block;
+  }
+  
+  input#img-1:checked ~ .carousel-dots label#img-dot-1,
+  input#img-2:checked ~ .carousel-dots label#img-dot-2,
+  input#img-3:checked ~ .carousel-dots label#img-dot-3,
+  input#img-4:checked ~ .carousel-dots label#img-dot-4,
+  input#img-5:checked ~ .carousel-dots label#img-dot-5,
+  input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+    opacity: 1;
+  }
+  
+  input:checked + .slide-container .nav label {
+    display: block;
+  }
+  
+/* ------------ grid zona novedades --------------------------*/
+.containergrid {
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+    background:navajowhite;
+    color:orange;
+    height: 180px;
+    transition: all 0.5s ease; 
+}
+ 
