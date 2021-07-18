@@ -48,7 +48,7 @@ body {
 
 .contenido {
   padding: 12px;
-  background-color: rgb(240, 234, 234);
+  background-image: linear-gradient(rgba(59, 8, 8, 0.5), rgba(255, 255, 0, 0.288));
   font-family: 'Lato', Courier, monospace;
   word-spacing: 3px;
   text-shadow: shadow 1px;;
@@ -56,13 +56,14 @@ body {
   }
 
 .nav1 {
+    /* background-image: linear-gradient(rgba(59, 8, 8, 0.5), rgba(255, 255, 0, 0.219)); */
     padding: 2px;
     border-bottom: solid 4px #eee;
     color:dodgerblue;
-    font-size: medium;
+    font-size: large;
     display: flex;
     margin-bottom: 160px;
-        
+            
     }
 li {
       list-style-type: none;
@@ -94,7 +95,7 @@ p {
 	text-align:left;
 }
 .color_verde{
-   color: #31B404;
+   color: #0410b4;
    font-style: italic;
    font-weight: bold;
 }
@@ -200,6 +201,9 @@ input[type=checkbox]:checked ~ #menu{
   display: block;
 }
 /*------------------------------------*/
+/*          Media Queries             */
+/*------------------------------------*/
+/*------------------------------------*/
 @media screen and (max-width : 760px){
   ul {
       position: static;
@@ -211,10 +215,11 @@ input[type=checkbox]:checked ~ #menu{
   ul li, li a {
       width: 100%;
   }
-  
+  /*----CONTROLA Visualizacion MENU-----------------*/
   .show-menu {
       display:block;
   }
+  
 }
 
 /*---FORMULARIO DE CONTACTO-------------------*/
@@ -399,3 +404,24 @@ input[type=submit]{
     transition: all 0.5s ease; 
 }
  
+#cuadrado{
+  background-color: rgb(24, 11, 11);
+  animation-name:animacion;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  position: relative;
+
+}
+@keyframes animacion {
+   0% { background-color:red; left: 0;top: 0px;}   
+   25% { background-color:green; left: 10px;top: 0px;}   
+   50% { background-color:aqua; left: 10px;top: 10px;}   
+   75% { background-color: brown; left: 0px;top: 10px;}   
+   100% { background-color:darkcyan; left: 0px;top: 10px;}   
+  
+ }
+
+@media only screen and (max-width:768px) {
+ 
+
+}

@@ -7,18 +7,22 @@
     <title>Proyecto1 sergio delgadillo</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesx.css" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     <SECTION>
     <div class="caja1">
       <header>
        <div class="header">
-        <div>
-        <a href="index.html" class="logo"><img width="325" height="150" src="img/titulo0.png" alt="titulo0"></a>
+        <div id="cuadrado">
+          <a href="index.html" class="logo"><img width="325" height="150" src="img/titulo0.png" alt="titulo0"></a>
         </div>
         <div>
         <ul>
-        <li ><h1>.   Tienda Full Music Do Re Mi   .</h1></li>
+        <li ><h1> .   Tienda Full Music Do Re Mi               </h1></li>
         <li ><div id="searchform">
           <input type="text" id="searchterm" placeholder=" " />
           <button type="button" id="search">Buscar!</button>
@@ -32,7 +36,7 @@
       
 <nav class="nav1">
   <div>
-  <label for="show-menu" class="show-menu">Show Menu</label>
+  <label for="show-menu" class="show-menu">Ver Menu</label>
   <input type="checkbox" id="show-menu" role="button">
   <ul id="menu">
     <li><a href="index.html">Home</a></li>
@@ -67,11 +71,10 @@
   
    </nav>
   <!-- FIN menu de navegacion -------------------------------->
-  <!-- COMIENZO SLIDE PRODUCTOS ------------------------------>
       </header>
-      <article  style="background-color:rgb(252, 225, 166);">
-  
-          <div class="carousel">
+      <!-- COMIENZO SLIDE PRODUCTOS ------------------------------>
+      <article>
+            <div class="carousel">
             <ul class="slides">
               <input type="radio" name="radio-buttons" id="img-1" checked />
               <li class="slide-container">
@@ -128,10 +131,10 @@
 <!-- COMIENZO  PUBLICIDAD ------------------------------>
       <div class="contenido">
         <br>
-        <p><strong>La Tienda tiene disponible distintos Equipos de Musica - Audifonos - Vinilos - entre otros para tu entretención en casa</strong></P>
+        <p><strong>La Tienda tiene disponible distintos Equipos de Musica - Audifonos - Vinilos - entre otros para tu entretención en casa.</strong></P>
         <p>Nació en 2018 como un establecimiento especializado en Alta Fidelidad <strong>Full Music DoReMI</strong> ofrece desde sus orígenes una completa gama de equipos a todos los niveles para todos los melómanos aficionados a este mundo.</p>
 		    <p><span class="color_verde"> Podrá disponer desde asequibles soluciones para disfrutar de la música, hasta los equipos High End más sofisticados donde el cliente pueda decidir. </span></p>
-		    <p>Disponemos de un stock variado de equipos de ocasión y en liquidación con excelentes oportunidades a precios reducidos. Entre las marcas que disponemos son:</p>
+		    <p >Disponemos de un stock variado de equipos de ocasión y en liquidación con excelentes oportunidades a precios reducidos. Entre las marcas que disponemos son:</p>
 		    <div>
         <table border="4">
           <thead>
@@ -187,5 +190,10 @@
     </footer>
     </div>
   </SECTION>
+  
+  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
   </body>
 </html>
